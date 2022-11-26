@@ -1,5 +1,7 @@
 #FUNCTIONS
-#FUNCTIONS
+from our_classes import *
+from promotions import *
+
 def login():
   "Let's Log in the UniPromo Beta App for first time, with just your name, surname and university mail is enough!"
   name = input("Name: ")
