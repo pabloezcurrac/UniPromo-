@@ -1,7 +1,12 @@
 #FUNCTIONS
+def login():
+  "Let's Log in the UniPromo Beta App for first time, with just your name, surname and university mail is enough!"
+  name = input("Name: ")
+  surname = input("Surname: ")
+  mail = input("Mail: ")
 
-from our_classes import *
-from promotions import * 
+  user = (name, surname, mail)
+
 
 def categories_creator():   
   User = Node("User", 0)
@@ -45,7 +50,9 @@ def categories_creator():
   User.adjacencylist.extend([TRAVELLING, SPORTS, RESTAURANTS, ELECTRONIC_GADGETS, LEISURE, BOOKS, TRANSPORTS, ACCOMODATION, WORK_OPPORTUNITIES])
 
 def categories_prefered_from_more_to_less():
+  print("\n These are your new preferences from more to less \n")
   print("From prefered to less prefered:")
+  User.adjacencylist.extend([TRAVELLING, SPORTS, RESTAURANTS, ELECTRONIC_GADGETS, LEISURE, BOOKS, TRANSPORTS, ACCOMODATION, WORK_OPPORTUNITIES])
   print(User.bfs())
 
 def preferences_changer():
@@ -87,4 +94,8 @@ def promotions_displayer():
     if WORK_OPPORTUNITIES.rating == n:
       print(f"\n Postion: {amazon1.position} ||\n Company: {amazon1.company} ||\n Description: {amazon1.description} ||\n Link: {amazon1.link} \n\n")
     n-=1
+
+
+
+
 
