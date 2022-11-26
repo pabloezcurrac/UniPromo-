@@ -1,4 +1,4 @@
-# OFFERINGS
+# PROMOTIONS
 Rome1 = Travelling(
     'Rome',
     'Next flight to Rome with any Airlines company from Madrid. Until 31st December',
