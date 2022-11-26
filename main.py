@@ -4,11 +4,7 @@ from promotions import *
 
 def main():
   print('\n-------------------- Welcome to UniPromo! --------------------')
-  print("We want to know which topics are you interested in!" 
-        "Log In with your Name, Surname and university mail to" 
-        "know your university and show the promotions you have avalable."
-        "Then, you will show your interests in the differrent topics of the promotions"
-        "from 1 to 5"
+  print("We want to know which topics are you interested in! \n Log In with your Name, Surname and university mail to\n know your university and show the promotions you have avalable.\n Then, you will show your interests in the differrent topics of the promotions" 
   )
   login()
   print("Let's customize for first time your favourite type of promotions!")
@@ -61,12 +57,13 @@ def main():
   ans.lower()
   if ans == "yes":
     preferences_changer()
+    print("These are your preferences from more to less:")
+    print(User.bfs())
   elif ans == "no":
     None
   else:
     print("Invalid input") 
 
-  categories_prefered_from_more_to_less
 
 
   print('\n---Thank you for using UniPromo! We hope you enjoyed your promos---\n')
