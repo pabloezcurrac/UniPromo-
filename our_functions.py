@@ -1,4 +1,5 @@
 #FUNCTIONS
+#FUNCTIONS
 def login():
   "Let's Log in the UniPromo Beta App for first time, with just your name, surname and university mail is enough!"
   name = input("Name: ")
@@ -58,8 +59,6 @@ def categories_prefered_from_more_to_less():
 def preferences_changer():
   print("Let's change yout preferences! ")
   categories_creator()   
-  print("These are your preferences updated! ")
-  categories_prefered_from_more_to_less()
 
 
 
@@ -94,7 +93,6 @@ def promotions_displayer():
     if WORK_OPPORTUNITIES.rating == n:
       print(f"\n Postion: {amazon1.position} ||\n Company: {amazon1.company} ||\n Description: {amazon1.description} ||\n Link: {amazon1.link} \n\n")
     n-=1
-
 
 
 
